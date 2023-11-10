@@ -1,0 +1,166 @@
+:root {
+  /* ### Primary */
+  --Blue: hsl(223, 87%, 63%);
+
+  /* ### Secondary */
+  --Pale-Blue: hsla(223, 89%, 61%, 0.397);
+  --Light-Pale-Blue: hsl(223, 100%, 88%);
+  --Light-Red: hsl(354, 100%, 66%);
+
+  /* ### Neutral */
+  --Gray: hsl(0, 0%, 59%);
+  --Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+
+p, h1 {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3vh 5vw;
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  gap: 5vh;
+  background-color: #0f112a;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3vh;
+}
+
+.logo {
+  width: 14vw;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+h1 > span {
+  font-weight: 100;
+  color: #fff;
+}
+
+h1 > strong {
+  color: #79b2b4;
+}
+p {
+  font-weight: 100;
+  font-size: 12px;
+  color: #f1f1b4a3
+  ;
+}
+.logos{
+  display: flex;
+  margin: 4vh
+}
+.CodeINBlogs-logo{
+  border-right: 2px solid #fffdffa0;
+  padding-right: 2%;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10vh;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  gap: 1.5vh;
+}
+
+input {
+  border-radius: 5rem;
+  border: solid 1px var(--Pale-Blue);
+  padding: 2vh 9vw;
+  font-weight: 100;
+  background-color: #0f112a;
+  color:hsl(223, 89%, 61%);
+}
+
+input::placeholder {
+  color: var(--Pale-Blue);
+}
+
+button {
+  border-radius: 5rem;
+  border: none;
+  background-color: var(--Blue);
+  color: #ffffff;
+  padding: 2vh 9vw;
+  box-shadow: var(--Pale-Blue) 0px 7px 29px 0px;
+}
+
+.dashboard {
+  width: 90%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 2vh;
+}
+
+.social-logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social-logos .btn {
+  border-radius: 50%;
+  padding: 0.25rem;
+  width: 8.5vw;
+  height: 8.5vw;
+  background-color: #ffffff;
+  color: var(--Blue);
+  box-shadow: none;
+  border: solid 1px var(--Light-Pale-Blue);
+}
+
+.copyright {
+  color: var(--Gray);
+  font-size: 12px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+#errorMessage {
+  position: relative;
+  color: red;
+  text-align: center;
+  font-style: italic;
+  width: 100%;
+  
+}
+
+.errorState {
+  border: solid 1px red;
+}
